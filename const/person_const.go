@@ -1,4 +1,4 @@
-package designConst
+package baseConst
 
 const (
 	PersonGenderMale   = 1

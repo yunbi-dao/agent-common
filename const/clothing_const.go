@@ -1,4 +1,4 @@
-package designConst
+package baseConst
 
 const (
 	ClothingGenderMale    = 1
