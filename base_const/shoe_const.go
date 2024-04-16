@@ -40,7 +40,7 @@ type ShoeStyle struct {
 }
 
 var (
-	ShoeStyleList = []*ShoeStyle{
+	lowTopStyleList = []*ShoeStyle{
 		{
 			Code: "basketballSneaker",
 			Name: "篮球鞋",
@@ -77,9 +77,75 @@ var (
 			Code: "boot",
 			Name: "靴子",
 		},
+	}
+
+	midTopStyleList = []*ShoeStyle{
 		{
-			Code: "other",
-			Name: "其他",
+			Code: "basketballSneaker",
+			Name: "篮球鞋",
+		},
+		{
+			Code: "runningShoe",
+			Name: "跑鞋",
+		},
+		{
+			Code: "casualShoe",
+			Name: "休闲鞋",
+		},
+		{
+			Code: "tennisShoe",
+			Name: "网球鞋",
+		},
+		{
+			Code: "trainingShoe",
+			Name: "训练鞋",
+		},
+		{
+			Code: "skateShoe",
+			Name: "滑板鞋",
+		},
+		{
+			Code: "hikingBoot",
+			Name: "登山靴",
+		},
+		{
+			Code: "boot",
+			Name: "靴子",
+		},
+	}
+
+	highTopStyleList = []*ShoeStyle{
+		{
+			Code: "basketballSneaker",
+			Name: "篮球鞋",
+		},
+		{
+			Code: "runningShoe",
+			Name: "跑鞋",
+		},
+		{
+			Code: "casualShoe",
+			Name: "休闲鞋",
+		},
+		{
+			Code: "tennisShoe",
+			Name: "网球鞋",
+		},
+		{
+			Code: "trainingShoe",
+			Name: "训练鞋",
+		},
+		{
+			Code: "skateShoe",
+			Name: "滑板鞋",
+		},
+		{
+			Code: "hikingBoot",
+			Name: "登山靴",
+		},
+		{
+			Code: "boot",
+			Name: "靴子",
 		},
 	}
 )

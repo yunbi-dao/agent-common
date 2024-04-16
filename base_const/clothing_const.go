@@ -93,10 +93,6 @@ var (
 			Code: "cardigan",
 			Name: "开衫",
 		},
-		{
-			Code: "other",
-			Name: "其他",
-		},
 	}
 )
 
@@ -142,10 +138,6 @@ var (
 			Code: "culottes",
 			Name: "阔腿裤",
 		},
-		{
-			Code: "other",
-			Name: "其他",
-		},
 	}
 )
 
@@ -170,10 +162,6 @@ var (
 		{
 			Code: "casualDress",
 			Name: "休闲连衣裙",
-		},
-		{
-			Code: "other",
-			Name: "其他",
 		},
 	}
 )
