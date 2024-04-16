@@ -1,5 +1,10 @@
 package baseConst
 
+type ClothingModel struct {
+	ModelDid  string `json:"modelDid"`
+	ModelName string `json:"modelName"`
+}
+
 const (
 	ClothingGenderMale    = 1
 	ClothingGenderFemale  = 2
