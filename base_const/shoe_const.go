@@ -34,6 +34,11 @@ var (
 	}
 )
 
+type ShoeSole struct {
+	Code string `json:"code"`
+	Url  string `json:"url"`
+}
+
 type ShoeStyle struct {
 	Code string `json:"code"`
 	Name string `json:"name"`
