@@ -17,7 +17,7 @@ type PersonAgeGroup struct {
 }
 
 var (
-	personAgeGroupList = []*PersonAgeGroup{
+	PersonAgeGroupList = []*PersonAgeGroup{
 		{
 			Code: PersonAgeGroupTeenager,
 			Name: "少年",

@@ -40,7 +40,7 @@ type ShoeStyle struct {
 }
 
 var (
-	lowTopStyleList = []*ShoeStyle{
+	LowTopStyleList = []*ShoeStyle{
 		{
 			Code: "basketballSneaker",
 			Name: "篮球鞋",
@@ -79,7 +79,7 @@ var (
 		},
 	}
 
-	midTopStyleList = []*ShoeStyle{
+	MidTopStyleList = []*ShoeStyle{
 		{
 			Code: "basketballSneaker",
 			Name: "篮球鞋",
@@ -114,7 +114,7 @@ var (
 		},
 	}
 
-	highTopStyleList = []*ShoeStyle{
+	HighTopStyleList = []*ShoeStyle{
 		{
 			Code: "basketballSneaker",
 			Name: "篮球鞋",
