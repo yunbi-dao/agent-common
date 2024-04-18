@@ -5,6 +5,7 @@ go 1.20
 require (
 	github.com/bwmarrin/snowflake v0.3.0
 	github.com/bytedance/sonic v1.10.2
+	gopkg.in/yaml.v3 v3.0.1
 )
 
 require (
