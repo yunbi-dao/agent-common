@@ -40,8 +40,9 @@ var (
 )
 
 type ShoeSole struct {
-	Code string `json:"code"`
-	Url  string `json:"url"`
+	Code    string `json:"code"`
+	ResUrl  string `json:"ResUrl"`
+	MaskUrl string `json:"maskUrl"`
 }
 
 type ShoeStyle struct {
