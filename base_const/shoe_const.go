@@ -41,7 +41,7 @@ var (
 
 type ShoeSole struct {
 	Code    string `json:"code"`
-	ResUrl  string `json:"ResUrl"`
+	ResUrl  string `json:"resUrl"`
 	MaskUrl string `json:"maskUrl"`
 }
 
