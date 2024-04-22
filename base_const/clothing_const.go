@@ -47,6 +47,10 @@ type ClothingStyle struct {
 var (
 	ClothingTopStyleList = []*ClothingStyle{
 		{
+			Code: "default",
+			Name: "默认",
+		},
+		{
 			Code: "tShirt",
 			Name: "T恤",
 		},
@@ -104,6 +108,10 @@ var (
 var (
 	ClothingBottomStyleList = []*ClothingStyle{
 		{
+			Code: "default",
+			Name: "默认",
+		},
+		{
 			Code: "jeans",
 			Name: "牛仔裤",
 		},
@@ -149,6 +157,10 @@ var (
 var (
 	ClothingDressStyleList = []*ClothingStyle{
 		{
+			Code: "default",
+			Name: "默认",
+		},
+		{
 			Code: "miniDress",
 			Name: "迷你裙",
 		},
@@ -178,6 +190,10 @@ type ClothingMaterial struct {
 
 var (
 	ClothingMaterialList = []*ClothingMaterial{
+		{
+			Code: "default",
+			Name: "默认",
+		},
 		{
 			Code: "cotton",
 			Name: "棉",
@@ -236,6 +252,10 @@ type ClothingColor struct {
 
 var (
 	ClothingColorList = []*ClothingColor{
+		{
+			Code: "default",
+			Name: "默认",
+		},
 		{
 			Code: "black",
 			Name: "黑色",

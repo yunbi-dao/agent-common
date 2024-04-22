@@ -53,6 +53,10 @@ type ShoeStyle struct {
 var (
 	LowTopStyleList = []*ShoeStyle{
 		{
+			Code: "default",
+			Name: "默认",
+		},
+		{
 			Code: "basketballSneaker",
 			Name: "篮球鞋",
 		},
@@ -92,6 +96,10 @@ var (
 
 	MidTopStyleList = []*ShoeStyle{
 		{
+			Code: "default",
+			Name: "默认",
+		},
+		{
 			Code: "basketballSneaker",
 			Name: "篮球鞋",
 		},
@@ -126,6 +134,10 @@ var (
 	}
 
 	HighTopStyleList = []*ShoeStyle{
+		{
+			Code: "default",
+			Name: "默认",
+		},
 		{
 			Code: "basketballSneaker",
 			Name: "篮球鞋",
@@ -168,6 +180,10 @@ type ShoeMaterial struct {
 
 var (
 	ShoeMaterialList = []*ShoeMaterial{
+		{
+			Code: "default",
+			Name: "默认",
+		},
 		{
 			Code: "leather",
 			Name: "皮革",
@@ -218,6 +234,10 @@ type ShoeColor struct {
 
 var (
 	ShoeColorList = []*ShoeColor{
+		{
+			Code: "default",
+			Name: "默认",
+		},
 		{
 			Code: "black",
 			Name: "黑色",
