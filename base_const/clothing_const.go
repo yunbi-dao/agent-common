@@ -181,6 +181,20 @@ var (
 	}
 )
 
+func RemoveClothingDupStyleList(list []*ClothingStyle) []*ClothingStyle {
+	result := make([]*ClothingStyle, 0)
+	codeMap := make(map[string]bool)
+
+	for _, style := range list {
+		if _, ok := codeMap[style.Code]; !ok {
+			codeMap[style.Code] = true
+			result = append(result, style)
+		}
+	}
+
+	return result
+}
+
 type ClothingMaterial struct {
 	Code string `json:"code"`
 	Name string `json:"name"`
@@ -246,6 +260,20 @@ var (
 		},
 	}
 )
+
+func RemoveClothingDupMaterialList(list []*ClothingMaterial) []*ClothingMaterial {
+	result := make([]*ClothingMaterial, 0)
+	codeMap := make(map[string]bool)
+
+	for _, style := range list {
+		if _, ok := codeMap[style.Code]; !ok {
+			codeMap[style.Code] = true
+			result = append(result, style)
+		}
+	}
+
+	return result
+}
 
 type ClothingColor struct {
 	Code string `json:"code"`
@@ -320,3 +348,17 @@ var (
 		},
 	}
 )
+
+func RemoveClothingDupColorList(list []*ClothingColor) []*ClothingColor {
+	result := make([]*ClothingColor, 0)
+	codeMap := make(map[string]bool)
+
+	for _, style := range list {
+		if _, ok := codeMap[style.Code]; !ok {
+			codeMap[style.Code] = true
+			result = append(result, style)
+		}
+	}
+
+	return result
+}

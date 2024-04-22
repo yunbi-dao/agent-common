@@ -171,6 +171,20 @@ var (
 	}
 )
 
+func RemoveShoeDupStyleList(list []*ShoeStyle) []*ShoeStyle {
+	result := make([]*ShoeStyle, 0)
+	codeMap := make(map[string]bool)
+
+	for _, style := range list {
+		if _, ok := codeMap[style.Code]; !ok {
+			codeMap[style.Code] = true
+			result = append(result, style)
+		}
+	}
+
+	return result
+}
+
 type ShoeMaterial struct {
 	Code string `json:"code"`
 	Name string `json:"name"`
@@ -227,6 +241,20 @@ var (
 		},
 	}
 )
+
+func RemoveShoeDupMaterialList(list []*ShoeMaterial) []*ShoeMaterial {
+	result := make([]*ShoeMaterial, 0)
+	codeMap := make(map[string]bool)
+
+	for _, style := range list {
+		if _, ok := codeMap[style.Code]; !ok {
+			codeMap[style.Code] = true
+			result = append(result, style)
+		}
+	}
+
+	return result
+}
 
 type ShoeColor struct {
 	Code string `json:"code"`
@@ -301,3 +329,17 @@ var (
 		},
 	}
 )
+
+func RemoveShoeDupColorList(list []*ShoeColor) []*ShoeColor {
+	result := make([]*ShoeColor, 0)
+	codeMap := make(map[string]bool)
+
+	for _, style := range list {
+		if _, ok := codeMap[style.Code]; !ok {
+			codeMap[style.Code] = true
+			result = append(result, style)
+		}
+	}
+
+	return result
+}
