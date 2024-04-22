@@ -45,11 +45,15 @@ type ClothingStyle struct {
 }
 
 var (
+	ClothingDefaultStyle = &ClothingStyle{
+		Code: "default",
+		Name: "默认",
+	}
+)
+
+var (
 	ClothingTopStyleList = []*ClothingStyle{
-		{
-			Code: "default",
-			Name: "默认",
-		},
+		ClothingDefaultStyle,
 		{
 			Code: "tShirt",
 			Name: "T恤",
@@ -107,10 +111,7 @@ var (
 
 var (
 	ClothingBottomStyleList = []*ClothingStyle{
-		{
-			Code: "default",
-			Name: "默认",
-		},
+		ClothingDefaultStyle,
 		{
 			Code: "jeans",
 			Name: "牛仔裤",
@@ -156,10 +157,7 @@ var (
 
 var (
 	ClothingDressStyleList = []*ClothingStyle{
-		{
-			Code: "default",
-			Name: "默认",
-		},
+		ClothingDefaultStyle,
 		{
 			Code: "miniDress",
 			Name: "迷你裙",
@@ -189,11 +187,15 @@ type ClothingMaterial struct {
 }
 
 var (
+	ClothingDefaultMaterial = &ClothingMaterial{
+		Code: "default",
+		Name: "默认",
+	}
+)
+
+var (
 	ClothingMaterialList = []*ClothingMaterial{
-		{
-			Code: "default",
-			Name: "默认",
-		},
+		ClothingDefaultMaterial,
 		{
 			Code: "cotton",
 			Name: "棉",
@@ -251,11 +253,15 @@ type ClothingColor struct {
 }
 
 var (
+	ClothingDefaultColor = &ClothingColor{
+		Code: "default",
+		Name: "默认",
+	}
+)
+
+var (
 	ClothingColorList = []*ClothingColor{
-		{
-			Code: "default",
-			Name: "默认",
-		},
+		ClothingDefaultColor,
 		{
 			Code: "black",
 			Name: "黑色",

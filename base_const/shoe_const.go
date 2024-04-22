@@ -51,11 +51,15 @@ type ShoeStyle struct {
 }
 
 var (
+	ShoeDefaultStyle = &ShoeStyle{
+		Code: "default",
+		Name: "默认",
+	}
+)
+
+var (
 	LowTopStyleList = []*ShoeStyle{
-		{
-			Code: "default",
-			Name: "默认",
-		},
+		ShoeDefaultStyle,
 		{
 			Code: "basketballSneaker",
 			Name: "篮球鞋",
@@ -95,10 +99,7 @@ var (
 	}
 
 	MidTopStyleList = []*ShoeStyle{
-		{
-			Code: "default",
-			Name: "默认",
-		},
+		ShoeDefaultStyle,
 		{
 			Code: "basketballSneaker",
 			Name: "篮球鞋",
@@ -134,10 +135,7 @@ var (
 	}
 
 	HighTopStyleList = []*ShoeStyle{
-		{
-			Code: "default",
-			Name: "默认",
-		},
+		ShoeDefaultStyle,
 		{
 			Code: "basketballSneaker",
 			Name: "篮球鞋",
@@ -179,11 +177,14 @@ type ShoeMaterial struct {
 }
 
 var (
+	ShoeDefaultMaterial = &ShoeMaterial{
+		Code: "default",
+		Name: "默认",
+	}
+)
+var (
 	ShoeMaterialList = []*ShoeMaterial{
-		{
-			Code: "default",
-			Name: "默认",
-		},
+		ShoeDefaultMaterial,
 		{
 			Code: "leather",
 			Name: "皮革",
@@ -233,11 +234,15 @@ type ShoeColor struct {
 }
 
 var (
+	ShoeDefaultColor = &ShoeColor{
+		Code: "default",
+		Name: "默认",
+	}
+)
+
+var (
 	ShoeColorList = []*ShoeColor{
-		{
-			Code: "default",
-			Name: "默认",
-		},
+		ShoeDefaultColor,
 		{
 			Code: "black",
 			Name: "黑色",
