@@ -4,8 +4,12 @@ const (
 	PersonGenderMale   = 1
 	PersonGenderFemale = 2
 )
+
 const (
-	PersonAgeGroupTeenager   = "teenager"
+// PersonAgeGroupTeenager   = "teenager"
+)
+
+const (
 	PersonAgeGroupYoungAdult = "youngAdult"
 	PersonAgeGroupMiddleAged = "middleAged"
 	PersonAgeGroupSenior     = "senior"
@@ -18,10 +22,10 @@ type PersonAgeGroup struct {
 
 var (
 	PersonAgeGroupList = []*PersonAgeGroup{
-		{
+		/*{
 			Code: PersonAgeGroupTeenager,
 			Name: "少年",
-		},
+		},*/
 		{
 			Code: PersonAgeGroupYoungAdult,
 			Name: "青年",
@@ -81,7 +85,7 @@ var (
 			Name: "中发",
 		},
 		{
-			Code: "long",
+			Code: "shoulderLength",
 			Name: "长发",
 		},
 	}
