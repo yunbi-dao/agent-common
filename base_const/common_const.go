@@ -60,3 +60,42 @@ type ModelHandleStatus struct {
 	Status int
 	Msg    string
 }
+
+func GetModelHandleStatus(handleStatus int) *ModelHandleStatus {
+	switch handleStatus {
+	case ModelHandleCleanPending.Status:
+		return ModelHandleCleanPending
+	case ModelHandleCleanProcess.Status:
+		return ModelHandleCleanProcess
+	case ModelHandleCleanFailed.Status:
+		return ModelHandleCleanFailed
+	case ModelHandleCleanSuccess.Status:
+		return ModelHandleCleanSuccess
+	case ModelHandleTagPending.Status:
+		return ModelHandleTagPending
+	case ModelHandleTagProcess.Status:
+		return ModelHandleTagProcess
+	case ModelHandleTagFailed.Status:
+		return ModelHandleTagFailed
+	case ModelHandleTagSuccess.Status:
+		return ModelHandleTagSuccess
+	case ModelHandleTrainPending.Status:
+		return ModelHandleTrainPending
+	case ModelHandleTrainProcess.Status:
+		return ModelHandleTrainProcess
+	case ModelHandleTrainFailed.Status:
+		return ModelHandleTrainFailed
+	case ModelHandleTrainSuccess.Status:
+		return ModelHandleTrainSuccess
+	case ModelHandlePublishPending.Status:
+		return ModelHandlePublishPending
+	case ModelHandlePublishProcess.Status:
+		return ModelHandlePublishProcess
+	case ModelHandlePublishFailed.Status:
+		return ModelHandlePublishFailed
+	case ModelHandlePublishSuccess.Status:
+		return ModelHandlePublishSuccess
+	default:
+		return nil
+	}
+}
