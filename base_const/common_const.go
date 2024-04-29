@@ -36,19 +36,22 @@ const (
 	MqHandleClothingModelPublishConsumer = "com.vt.service.mq.handle.clothing.model.publish.consumer"
 )
 
-// 处理状态: 11.待处理 21.清洗中 22.清洗失败 23.清洗成功 31.打标中 32.打标失败 33.打标成功 41.训练中 42.训练失败 43.训练成功 51.发布中 52.发布失败 53.发布成功
+// 处理状态: 20.清洗待处理 21.清洗中 22.清洗失败 23.清洗成功 30.打标待处理 31.打标中 32.打标失败 33.打标成功 40.训练待处理 41.训练中 42.训练失败 43.训练成功 50.发布待处理 51.发布中 52.发布失败 53.发布成功
 var (
-	ModelHandlePending        = &ModelHandleStatus{Status: 11, Msg: "待处理"}
-	ModelHandleCleaning       = &ModelHandleStatus{Status: 21, Msg: "清洗中"}
+	ModelHandleCleanPending   = &ModelHandleStatus{Status: 20, Msg: "清洗待处理"}
+	ModelHandleCleanProcess   = &ModelHandleStatus{Status: 21, Msg: "清洗中"}
 	ModelHandleCleanFailed    = &ModelHandleStatus{Status: 22, Msg: "清洗失败"}
 	ModelHandleCleanSuccess   = &ModelHandleStatus{Status: 23, Msg: "清洗成功"}
-	ModelHandleTagging        = &ModelHandleStatus{Status: 31, Msg: "打标中"}
+	ModelHandleTagPending     = &ModelHandleStatus{Status: 30, Msg: "打标待处理"}
+	ModelHandleTagProcess     = &ModelHandleStatus{Status: 31, Msg: "打标中"}
 	ModelHandleTagFailed      = &ModelHandleStatus{Status: 32, Msg: "打标失败"}
 	ModelHandleTagSuccess     = &ModelHandleStatus{Status: 33, Msg: "打标成功"}
-	ModelHandleTraining       = &ModelHandleStatus{Status: 41, Msg: "训练中"}
+	ModelHandleTrainPending   = &ModelHandleStatus{Status: 40, Msg: "训练待处理"}
+	ModelHandleTrainProcess   = &ModelHandleStatus{Status: 41, Msg: "训练中"}
 	ModelHandleTrainFailed    = &ModelHandleStatus{Status: 42, Msg: "训练失败"}
 	ModelHandleTrainSuccess   = &ModelHandleStatus{Status: 43, Msg: "训练成功"}
-	ModelHandlePublishing     = &ModelHandleStatus{Status: 51, Msg: "发布中"}
+	ModelHandlePublishPending = &ModelHandleStatus{Status: 50, Msg: "发布待处理"}
+	ModelHandlePublishProcess = &ModelHandleStatus{Status: 51, Msg: "发布中"}
 	ModelHandlePublishFailed  = &ModelHandleStatus{Status: 52, Msg: "发布失败"}
 	ModelHandlePublishSuccess = &ModelHandleStatus{Status: 53, Msg: "发布成功"}
 )
