@@ -12,10 +12,10 @@ const (
 )
 
 const (
-	ClothingCategoryTop    = "top"
-	ClothingCategoryBottom = "bottom"
-	ClothingEnsemble       = "ensemble"
-	ClothingCategoryDress  = "dress"
+	ClothingCategoryTop      = "top"
+	ClothingCategoryBottom   = "bottom"
+	ClothingCategoryEnsemble = "ensemble"
+	ClothingCategoryDress    = "dress"
 )
 
 type ClothingCategory struct {
@@ -34,7 +34,7 @@ var (
 			Name: "下装",
 		},
 		{
-			Code: ClothingEnsemble,
+			Code: ClothingCategoryEnsemble,
 			Name: "套装",
 		},
 		{
