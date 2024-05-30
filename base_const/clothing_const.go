@@ -14,6 +14,7 @@ const (
 const (
 	ClothingCategoryTop    = "top"
 	ClothingCategoryBottom = "bottom"
+	ClothingEnsemble       = "ensemble"
 	ClothingCategoryDress  = "dress"
 )
 
@@ -31,6 +32,10 @@ var (
 		{
 			Code: ClothingCategoryBottom,
 			Name: "下装",
+		},
+		{
+			Code: ClothingEnsemble,
+			Name: "套装",
 		},
 		{
 			Code: ClothingCategoryDress,
