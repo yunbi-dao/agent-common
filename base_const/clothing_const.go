@@ -44,6 +44,34 @@ var (
 	}
 )
 
+var (
+	ClothingViewFront = "front"
+	ClothingViewBack  = "back"
+	ClothingViewSide  = "side"
+)
+
+var (
+	ClothingViewList = []*ClothingView{
+		{
+			Code: ClothingViewFront,
+			Name: "正面",
+		},
+		{
+			Code: ClothingViewBack,
+			Name: "背面",
+		},
+		{
+			Code: ClothingViewSide,
+			Name: "侧面",
+		},
+	}
+)
+
+type ClothingView struct {
+	Code string `json:"code"`
+	Name string `json:"name"`
+}
+
 type ClothingMaterial struct {
 	Code string `json:"code"`
 	Name string `json:"name"`
