@@ -180,10 +180,6 @@ var (
 			Name: "橙色",
 		},
 		{
-			Code: "multi",
-			Name: "多色",
-		},
-		{
 			Code: "other",
 			Name: "其他",
 		},
