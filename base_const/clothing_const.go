@@ -215,10 +215,6 @@ var (
 			Code: "orange",
 			Name: "橙色",
 		},
-		{
-			Code: "other",
-			Name: "其他",
-		},
 	}
 )
 
