@@ -1,13 +1,13 @@
 package baseConst
 
-type SpaceStyle struct {
+type SpaceCategory struct {
 	Code string `json:"code"`
 	Name string `json:"name"`
 	Desc string `json:"desc"`
 }
 
 var (
-	SpaceStyleList = []*SpaceStyle{
+	SpaceCategoryList = []*SpaceCategory{
 		{
 			Code: "space cabin homestay",
 			Name: "太空舱民宿",
