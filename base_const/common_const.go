@@ -107,6 +107,7 @@ type ComfyHandleStatus struct {
 
 var (
 	ComfyHandleWaiting    = &ComfyHandleStatus{Code: "waiting", Msg: "等待中"}
-	ComfyHandleProcessing = &ComfyHandleStatus{Code: "processing", Msg: "处理中"}
-	ComfyHandleDone       = &ComfyHandleStatus{Code: "done", Msg: "处理完成"}
+	ComfyHandleProcessing = &ComfyHandleStatus{Code: "processing", Msg: "正在生成中"}
+	ComfyHandleDone       = &ComfyHandleStatus{Code: "done", Msg: "生成完成"}
+	ComfyHandleError      = &ComfyHandleStatus{Code: "error", Msg: "服务器繁忙，请稍后再试"}
 )
